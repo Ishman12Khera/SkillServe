@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Applicant Form</title>
+</head>
+
+<body>
+
+<div class="contact-main">
+<h4>Applicant Form</h4>
+<form (ngSubmit)="applicantRegister()">
+
+<div>Full Name  <input type="text"   placeholder="Full Name *" name="fullName"  [(ngModel)]="applicant.fullName"/></div>
+<div>Email ID (Username)<input type="text"   placeholder="Email ID (Username) *"  name ="emailId" [(ngModel)]="applicant.emailId" /></div>
+<div>Password<input type="text"   placeholder="Password *" name ="password" [(ngModel)]="applicant.password"  /></div>
+<div>Confirm Password<input type="text"   placeholder="Confirm Password *"  name ="cpassword" [(ngModel)]="applicant.cpassword" /></div>
+<div>Contact Number<input type="text"   placeholder="Contact Number *"  name ="contactNumber" [(ngModel)]="applicant.contactNumber" /></div>
+<div>Address<input type="text"   placeholder="Address"  name ="Address" [(ngModel)]="applicant.Address"/></div>
+<div>Qualification<select name="Qualification" id="" [(ngModel)]="applicant.Qualification">
+<option value="High School">-</option>
+  <option value="High School">High School</option>
+  <option value="College Diploma">College Diploma</option>
+  <option value="Graducation">Graducation</option>
+  <option value="Undergraduate">Undergraduate</option>
+   <option value="Masters">Masters</option>
+</select></div>
+<div>Experience<input type="text"   placeholder="Experience"  name ="experience" [(ngModel)]="applicant.experience"/></div>
+<div>Age<input type="text"   placeholder="Age" name ="age" [(ngModel)]="applicant.age" /></div>
+<div>Primary Skills<input type="text"   placeholder="Primary Skills *" name ="primarySkill" [(ngModel)]="applicant.primarySkill"  /></div>
+<div>Secondary Skills<input type="text"   placeholder="Secondary Skills" name ="secondarySkill" [(ngModel)]="applicant.secondarySkill" /></div>
+ <div> Resume<input type="file" id="myFile" name ="resume" [(ngModel)]="applicant.resume"></div>
+<div><input type="button" value="Clear">
+    <input class="btn btn-primary" type="submit" value="Register"></div>
+
+
+</form>
+</div>
+</body>
+</html>
